@@ -307,6 +307,12 @@ local: 本地模式（默认模式）
 默认模式在mapred-default.xml中定义。
 如果代码中（conf.set）、运行的环境中有配置（mapred-site.xml），会默认覆盖default配置。
 
+### YARN模式
+
+需要配置参数：
+mapreduce.framework.name=yarn
+yarn.resourcemanager.hostname=node1.itcast.cn
+
 maven主类名补充完整，类名需要全路径
 
 ![image-20211008200153635](..\day8\image-20211008200153635.png)
@@ -318,3 +324,19 @@ maven主类名补充完整，类名需要全路径
 ![image-20211008200955665](..\day8\image-20211008200955665.png)
 
 打包后的jar包直接拖到Linux虚拟机中![image-20211008201456033](..\day8\image-20211008201456033.png)
+
+```shell
+hadoop jar example_mr-1.0.jar /data/wordcount/input /data/wordcount/output
+```
+
+
+
+### Local模式
+
+安装hadoop，并配置环境变量，需将Hadoop.dll添加到Windows/System32目录下
+
+配置运行环境
+
+![image-20211009092045657](..\day8\image-20211009092045657.png)
+
+通常可以在local模式下运行测试，之后在打包成jar包到分布式系统上运行
