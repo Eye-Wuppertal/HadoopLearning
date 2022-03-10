@@ -23,13 +23,13 @@ http://master:8088/    Yarn 网页UI
 
 ### HDFS初体验    http://master:9870/
 
-![image-20211003192223062](..\day4\image-20211003192223062.png)
+![image-20211003192223062](img/image-20211003192223062.png)
 
 ```shell
 hadoop fs-mkdir /test01
 ```
 
-![image-20211003192410342](..\day4\image-20211003192410342.png)
+![image-20211003192410342](img/image-20211003192410342.png)
 
 ```shell
 echo 1 >> 1.text   
@@ -37,7 +37,7 @@ hadoop fs -put 1.txt /test01
 # 上传速率慢 why？
 ```
 
-![image-20211003193120091](..\day4\image-20211003193120091.png)
+![image-20211003193120091](img/image-20211003193120091.png)
 
 hdfs  的本质是一个文件系统
 
@@ -52,16 +52,16 @@ cd ./mapreduce
 ll
 ```
 
-![image-20211003194058144](..\day4\image-20211003194058144.png)
+![image-20211003194058144](img/image-20211003194058144.png)
 
 ```shell
 hadoop jar hadoop-mapreduce-examples-3.1.4.jar pi 3 5
 #计算圆周率
 ```
 
-![image-20211003194820294](..\day4\image-20211003194820294.png)
+![image-20211003194820294](img/image-20211003194820294.png)
 
-![image-20211003194731611](..\day4\image-20211003194731611.png)
+![image-20211003194731611](img/image-20211003194731611.png)
 
 ```shell
 vi word.txt
@@ -72,11 +72,11 @@ hadoop jar hadoop-mapreduce-examples-3.1.4.jar wordcount /test01/wordcount/in /t
 # 检测目标路径中的文件中的单词数量
 ```
 
-![image-20211003202036564](..\day4\image-20211003202036564.png)
+![image-20211003202036564](img/image-20211003202036564.png)
 
-![image-20211003205543943](..\day4\image-20211003205543943.png)
+![image-20211003205543943](img/image-20211003205543943.png)
 
-![image-20211003205507057](..\day4\image-20211003205507057.png)
+![image-20211003205507057](img/image-20211003205507057.png)
 
 1. MapReduce本质是程序？
 
@@ -121,11 +121,11 @@ hadoop jar /software/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-jobcl
 
 ```
 
-![image-20211003215635245](..\day4\image-20211003215635245.png)
+![image-20211003215635245](img/image-20211003215635245.png)
 
-![image-20211003220242461](..\day4\image-20211003220242461.png)
+![image-20211003220242461](img/image-20211003220242461.png)
 
-![image-20211003220622339](D:\Graduate\HadoopLearning\day4\image-20211003220622339.png)
+![image-20211003220622339](img/image-20211003220622339.png)
 
 
 

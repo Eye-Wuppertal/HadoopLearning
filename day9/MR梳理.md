@@ -33,7 +33,7 @@ if(fs.exits(new Path(args[1]))){
 
 ## MR阶段
 
-![image-20211009105955912](..\day9\image-20211009105955912.png)
+![image-20211009105955912](img/image-20211009105955912.png)
 
 ### Map阶段
 

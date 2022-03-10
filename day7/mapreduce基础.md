@@ -10,9 +10,9 @@
 
 不可拆分的计算任务或相互间有依赖关系的数据无法进行并行计算
 
-![image-20211007173531812](..\day7\image-20211007173531812.png)
+![image-20211007173531812](img/image-20211007173531812.png)
 
-![image-20211007213452269](..\day7\image-20211007213452269.png)
+![image-20211007213452269](img/image-20211007213452269.png)
 
 ## 抽象模型
 
@@ -33,7 +33,7 @@ ReduceTask：负责reduce阶段的整个数据处理流程
 MapReduce编程模型只能包含一个Map阶段和一个Reduce阶段
 如果用户的业务逻辑非常复杂，那就只能多个MapReduce程序串行运行。
 
-![image-20211007210921801](..\day7\image-20211007210921801.png)
+![image-20211007210921801](img/image-20211007210921801.png)
 
 ## 编程规范
 
@@ -63,7 +63,7 @@ public class UserReducer extends Reducer{
 
 除了Map和Reduce过程,内部包含了很多默认组件和默认的行为，如：组件：读取数据组件InputFormat、输出数据组件OutputFormat；行为：排序（key的字典序排序）、分组（reduce阶段key相同的分为一组，一组调用一次reduce处理）
 
-![image-20211007220630389](..\day7\image-20211007220630389.png)
+![image-20211007220630389](img/image-20211007220630389.png)
 
 ## 序列化
 
@@ -71,7 +71,7 @@ public class UserReducer extends Reducer{
 
 反序列化（Deserialization）是将字节流转换为一系列结构化对象的过程，重新创建该对象。
 
-![image-20211007220717021](..\day7\image-20211007220717021.png)
+![image-20211007220717021](img/image-20211007220717021.png)
 
 ### java中的序列化
 
@@ -85,7 +85,7 @@ public class UserReducer extends Reducer{
 write叫做序列化方法，用于把对象指定的字段写出去；
 readFields叫做反序列化方法，用于从字节流中读取字段重构对象；
 
-![image-20211007222044117](..\day7\image-20211007222044117.png)
+![image-20211007222044117](img/image-20211007222044117.png)
 
 和java中的Comparable接口合并，提供一个接口WritableComparable
 

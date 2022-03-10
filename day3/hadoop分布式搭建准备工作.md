@@ -1,24 +1,24 @@
 VM, CentOS7, finalshell
 
-![image-20211002001352799](..\day3\image-20211002001352799.png)
+![image-20211002001352799](img/image-20211002001352799.png)
 
-![image-20211002001420137](..\day3\image-20211002001420137.png)
+![image-20211002001420137](img/image-20211002001420137.png)
 
-![image-20211002001453866](..\day3\image-20211002001453866.png)
+![image-20211002001453866](img/image-20211002001453866.png)
 
-![image-20211002001523705](..\day3\image-20211002001523705.png)
+![image-20211002001523705](img/image-20211002001523705.png)
 
-![image-20211002001633450](..\day3\image-20211002001633450.png)
+![image-20211002001633450](img/image-20211002001633450.png)
 
-![image-20211002001714914](..\day3\image-20211002001714914.png)
+![image-20211002001714914](img/image-20211002001714914.png)
 
-![image-20211002001918188](..\day3\image-20211002001918188.png)
+![image-20211002001918188](img/image-20211002001918188.png)
 
-![image-20211002010156748](..\day3\image-20211002010156748.png)
+![image-20211002010156748](img/image-20211002010156748.png)
 
 vi /etc/sysconfig/network-scripts/ifcfg-ens33     //克隆节点需要更改ip address
 
-![image-20211002005052307](..\day3\image-20211002005052307.png)
+![image-20211002005052307](img/image-20211002005052307.png)
 
 systemctl stop firewalld
 
@@ -34,23 +34,23 @@ vi  /etc/hostname  修改主机名
 
 vi /etc/hosts   修改映射
 
-![image-20211002130902760](..\day3\image-20211002130902760.png)
+![image-20211002130902760](img/image-20211002130902760.png)
 
 scp /etc/hosts salve1:etc  将映射文件拷贝到其他两个节点
 
-![image-20211002132229325](..\day3\image-20211002132229325.png)
+![image-20211002132229325](img/image-20211002132229325.png)
 
 创建hadoop和jdk安装包下载路径和软件安装路径
 
-![image-20211002133010633](..\day3\image-20211002133010633.png)
+![image-20211002133010633](img/image-20211002133010633.png)
 
-![image-20211002133020284](..\day3\image-20211002133020284.png)
+![image-20211002133020284](img/image-20211002133020284.png)
 
 tar zxvf /data/packs/jdk...  -C /software/  
 
 tar zxvf /data/packshadoop...  -C /software/    解压hadoop和jdk
 
-![image-20211002133722796](..\day3\image-20211002133722796.png)
+![image-20211002133722796](img/image-20211002133722796.png)
 
 重命名
 
@@ -67,7 +67,7 @@ export PATH=$PATH:$HADOOP_HOME/bin:$JAVA_HOME/bin:$HADOOP_HOME/sbin:$JAVA_HOME/s
 
 需要配置的Hadoop文件
 
-![image-20211002135048308](..\day3\image-20211002135048308.png)
+![image-20211002135048308](img/image-20211002135048308.png)
 
 ```xml
 vi core-site.xml
@@ -275,7 +275,9 @@ scp /etc/profile slave1:/etc/
 修改Hadoop环境变量
 ```
 
-小结![image-20211003000437022](..\day3\image-20211003000437022.png)
+小结
+
+![image-20211003000437022](img/image-20211003000437022.png)
 
 格式化namenode     初始换创建目录
 
