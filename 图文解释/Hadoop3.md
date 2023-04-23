@@ -161,7 +161,7 @@ export PATH=$PATH:$HADOOP_HOME/bin:$JAVA_HOME/bin:$HADOOP_HOME/sbin:$JAVA_HOME/s
 
 ```shell
 java -version
-hadoop
+hadoop version
 #检查环境变量是否出错
 ```
 
@@ -173,7 +173,7 @@ hadoop
 cd /software/hadoop/etc/hadoop/
 # 先打开配置文件所在目录方便后续操作
 
-修改 hadoop-env.sh 
+# 修改 hadoop-env.sh 
 vi hadoop-env.sh 
 #配置JAVA_HOME
 export JAVA_HOME=/software/java
@@ -187,8 +187,10 @@ export YARN_NODEMANAGER_USER=root
 ```
 
 ```xml
-修改 core-site.xml   写在configration标签里，后同
+# --修改 core-site.xml   写在configration标签里，后同
 vi core-site.xml
+
+
 <!-- 默认文件系统的名称。通过URI中schema区分不同文件系统。-->
 <!-- file:///本地文件系统 hdfs:// hadoop分布式文件系统 gfs://。-->
 <!-- hdfs文件系统访问地址：http://nn_host:9000。-->
